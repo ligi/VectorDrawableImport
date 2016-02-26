@@ -1,7 +1,7 @@
 <idea-plugin version="2">
     <id>VectorDrawableImporter</id>
     <name>VectorDrawableImporter</name>
-    <version>0.1</version>
+    <version>0.2</version>
     <vendor email="ligi@ligi.de" url="http://ligi.de">ligi</vendor>
 
     <description><![CDATA[
