@@ -29,7 +29,7 @@ intellij {
 
     publish {
         username System.getenv('PLUGIN_USER')
-        pluginId '085'
+        pluginId '8221'
 
         password System.getenv('PLUGIN_PASSWORD')
         channel System.getenv('PLUGIN_CHANNEL') ?: ''
