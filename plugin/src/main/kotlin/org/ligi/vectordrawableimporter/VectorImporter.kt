@@ -82,7 +82,7 @@ class VectorImporter internal constructor(private val project: Project?, module:
         val imageAsset = iconSearchComboBox.selectedItem  as ImageAsset
         val selectedTo = File(resDirComboBox.selectedItem as String)
         selectedTo.mkdir()
-        val toFile = File(selectedTo, imageAsset.file.name.replace(".png", ".xml"))
+        val toFile = File(selectedTo, "ic_" + imageAsset.file.name.replace(".png", ".xml"))
 
         val fromFile = File(imageAsset.file.absolutePath.replace(".png", ".xml").replace("/png/", "/xml/"))
 
