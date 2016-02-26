@@ -36,10 +36,6 @@ intellij {
     }
 }
 
-group 'org.ligi.vectordrawableimport'
-
-version '0.1'
-
 repositories {
     jcenter()
 }
