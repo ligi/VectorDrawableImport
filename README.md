@@ -14,6 +14,10 @@ IntelliJ / Android-Studio plugin to import Material Vector Icons into an Android
 
 The Icons are from https://design.google.com/icons/
 
+### Links
+
+Plugin in jetbrains-repo: https://plugins.jetbrains.com/plugin/8221
+
 ### License
 
 Copyright 2016 ligi
