@@ -17,12 +17,13 @@ plugins {
 apply plugin: 'org.jetbrains.intellij'
 apply plugin: 'kotlin'
 
+version '0.2'
 
 sourceCompatibility = 1.6
 
 intellij {
     version project.hasProperty('ideaVersion') ? ideaVersion : 'IC-14.1.5'
-    pluginName 'android-drawable-importer-intellij-plugin'
+    pluginName 'android-vector-drawable-import-intellij-plugin'
     plugins 'android'
     updateSinceUntilBuild false
     downloadSources !Boolean.valueOf(System.getenv('CI'))
