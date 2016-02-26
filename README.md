@@ -1,12 +1,20 @@
 [![Build Status](https://snap-ci.com/ligi/VectorDrawableImport/branch/master/build_image)](https://snap-ci.com/ligi/VectorDrawableImport/branch/master)
 
+IntelliJ / Android-Studio plugin to import Material Vector Icons into an Android-Project
+
 <img src="https://raw.githubusercontent.com/ligi/VectorDrawableImport/master/images/screencast.gif"/>
 
-run action "Android Vector Drawable import"
-select icon and optionally change resource path
-hit ok and enjoy the new resource
+### Howto
+
+* run action "Android Vector Drawable import"
+* select icon and optionally change resource path
+* hit ok and enjoy the new resource
+
+### Credits
 
 The Icons are from https://design.google.com/icons/
+
+### License
 
 Copyright 2016 ligi
 
