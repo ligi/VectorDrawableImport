@@ -1,0 +1,50 @@
+buildscript {
+    ext.kotlin_version = '1.0.0'
+
+    repositories {
+        mavenCentral()
+    }
+
+    dependencies {
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+    }
+}
+
+plugins {
+    id "org.jetbrains.intellij" version "0.0.41"
+}
+
+apply plugin: 'org.jetbrains.intellij'
+apply plugin: 'kotlin'
+
+
+sourceCompatibility = 1.6
+
+intellij {
+    version project.hasProperty('ideaVersion') ? ideaVersion : 'IC-14.1.5'
+    pluginName 'android-drawable-importer-intellij-plugin'
+    plugins 'android'
+    updateSinceUntilBuild false
+    downloadSources !Boolean.valueOf(System.getenv('CI'))
+
+    publish {
+        username System.getenv('PLUGIN_USER')
+        pluginId '085'
+
+        password System.getenv('PLUGIN_PASSWORD')
+        channel System.getenv('PLUGIN_CHANNEL') ?: ''
+    }
+}
+
+group 'org.ligi.vectordrawableimport'
+
+version '0.1'
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+    compile "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+    compile "org.jetbrains.kotlin:kotlin-runtime:$kotlin_version"
+}
