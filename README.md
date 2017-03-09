@@ -1,4 +1,6 @@
-[![Build Status](https://snap-ci.com/ligi/VectorDrawableImport/branch/master/build_image)](https://snap-ci.com/ligi/VectorDrawableImport/branch/master)
+This is deprecated! The new Android-Studio version can now search in the vector drawable importer so this code is not needed anymore
+
+YAY - future ;-)
 
 IntelliJ / Android-Studio plugin to import Material Vector Icons into an Android-Project
 
